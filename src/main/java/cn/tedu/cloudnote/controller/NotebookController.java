@@ -22,6 +22,7 @@ public class NotebookController extends BaseController {
 	@ResponseBody
 	public JsonResult list(String userId){
 		List<Map<String,Object>> list=notebookService.listNotebooks(userId);
+		System.out.println();
 		return new JsonResult(list);
 	}
 }
